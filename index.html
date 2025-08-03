@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>मेरी विज्ञापन से भरी वेबसाइट (तेज़ लोडिंग)</title>
+    <title>मेरी वेबसाइट</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,6 +20,7 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow-x: hidden; /* Prevent horizontal scroll for large banners on small screens */
         }
         .ad-section {
             margin-bottom: 30px;
@@ -38,32 +39,26 @@
             border-radius: 5px;
             text-align: center;
         }
-        .monetag-multitag {
-            margin-top: 30px;
-            border: 2px solid #007bff;
-            padding: 20px;
-            text-align: center;
-            background-color: #e0f2ff;
+        .ad-block {
+            margin-bottom: 10px; /* Space between repeated ads */
         }
-
-        /* Direct Link Modal Styling */
         .direct-link-modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1000; /* Sit on top */
+            display: none;
+            position: fixed;
+            z-index: 1000;
             left: 0;
             top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
         }
         .direct-link-modal-content {
             background-color: #fefefe;
-            margin: 5% auto; /* 5% from the top and centered */
+            margin: 5% auto;
             padding: 20px;
             border: 1px solid #888;
-            width: 80%; /* Could be more or less, depending on screen size */
+            width: 80%;
             height: 80%;
             position: relative;
         }
@@ -81,7 +76,7 @@
         }
         .modal-iframe {
             width: 100%;
-            height: calc(100% - 40px); /* Adjust height considering padding/close button */
+            height: calc(100% - 40px);
             border: none;
         }
     </style>
@@ -89,88 +84,91 @@
 <body>
 
     <div class="container">
-        <h1>मेरी शानदार वेबसाइट</h1>
-        <p>यह आपकी वेबसाइट की मुख्य सामग्री है।</p>
+        <h1>मेरी वेबसाइट</h1>
+        <p>यह आपकी वेबसाइट की मुख्य सामग्री है। यहां आप लेख, ब्लॉग पोस्ट, या कोई भी जानकारी डाल सकते हैं जो आपके उपयोगकर्ताओं के लिए मूल्यवान हो।</p>
 
-        <!-- Monetag Multi-Tag (इसे कहीं भी रखें जहां आप Monetag के सभी विज्ञापन प्रारूप दिखाना चाहते हैं) -->
-        <div class="monetag-multitag">
-            <h2>Monetag मल्टी-टैग विज्ञापन</h2>
-            <p>यह Monetag का मल्टी-टैग है जो सभी विज्ञापन प्रारूपों को अपने आप समायोजित करेगा।</p>
+        <!-- विज्ञापन ब्लॉक -->
+        <div class="ad-section">
+            <h2>विज्ञापन</h2>
             <!-- हर विज्ञापन 10 बार - Monetag Multi-Tag -->
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
-            <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            <h3>यह विज्ञापन मल्टी-फॉर्मेट सपोर्ट करता है</h3>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
+            <div class="ad-block">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="161075" async data-cfasync="false"></script>
+            </div>
         </div>
 
+        <p>यहां कुछ और सामग्री है। सामग्री और विज्ञापनों के बीच संतुलन बनाए रखना महत्वपूर्ण है।</p>
+
         <div class="ad-section">
-            <h2>Adsterra बैनर विज्ञापन (468×60)</h2>
-            <!-- हर विज्ञापन 10 बार - Adsterra Banner 468×60 -->
+            <h2>बैनर विज्ञापन (468×60)</h2>
+            <!-- हर विज्ञापन 10 बार - बैनर 468×60 -->
             <script type="text/javascript">
                 for (let i = 0; i < 10; i++) {
                     document.write(`
-                        <script type="text/javascript">
-                            atOptions = {
-                                'key' : '7281653bd62d5d460d6daa8793f19c5e',
-                                'format' : 'iframe',
-                                'height' : 60,
-                                'width' : 468,
-                                'params' : {}
-                            };
-                        <\/script>
-                        <script type="text/javascript" src="//www.highperformanceformat.com/7281653bd62d5d460d6daa8793f19c5e/invoke.js"><\/script>
+                        <div class="ad-block">
+                            <script type="text/javascript">
+                                atOptions = {
+                                    'key' : '7281653bd62d5d460d6daa8793f19c5e',
+                                    'format' : 'iframe',
+                                    'height' : 60,
+                                    'width' : 468,
+                                    'params' : {}
+                                };
+                            <\/script>
+                            <script type="text/javascript" src="//www.highperformanceformat.com/7281653bd62d5d460d6daa8793f19c5e/invoke.js"><\/script>
+                        </div>
                     `);
                 }
             </script>
         </div>
 
-        <p>यहां कुछ और सामग्री है।</p>
+        <p>आप अपनी सामग्री के महत्वपूर्ण अनुभागों के बीच विज्ञापन डाल सकते हैं ताकि वे अधिक दिखाई दें।</p>
 
         <div class="ad-section">
-            <h2>Adsterra बैनर विज्ञापन (160×300)</h2>
-            <!-- हर विज्ञापन 10 बार - Adsterra Banner 160×300 -->
+            <h2>बैनर विज्ञापन (160×300)</h2>
+            <!-- हर विज्ञापन 10 बार - बैनर 160×300 -->
             <script type="text/javascript">
                 for (let i = 0; i < 10; i++) {
                     document.write(`
-                        <script type="text/javascript">
-                            atOptions = {
-                                'key' : 'bc56d12282cadec7b8753ae823c22319',
-                                'format' : 'iframe',
-                                'height' : 300,
-                                'width' : 160,
-                                'params' : {}
-                            };
-                        <\/script>
-                        <script type="text/javascript" src="//www.highperformanceformat.com/bc56d12282cadec7b8753ae823c22319/invoke.js"><\/script>
-                    `);
-                }
-            </script>
-        </div>
-
-        <p>आप अपनी सामग्री के महत्वपूर्ण अनुभागों के बीच विज्ञापन डाल सकते हैं।</p>
-
-        <div class="ad-section">
-            <h2>Adsterra बैनर विज्ञापन (320×50 - मोबाइल के लिए अच्छा)</h2>
-            <!-- हर विज्ञापन 10 बार - Adsterra Banner 320×50 -->
-            <script type="text/javascript">
-                for (let i = 0; i < 10; i++) {
-                    document.write(`
-                        <script type="text/javascript">
-                            atOptions = {
-                                'key' : 'f4fd46187fcf3a252df23d7277e02fd7',
-                                'format' : 'iframe',
-                                'height' : 50,
-                                'width' : 320,
-                                'params' : {}
-                            };
-                        <\/script>
-                        <script type="text/javascript" src="//www.highperformanceformat.com/f4fd46187fcf3a252df23d7277e02fd7/invoke.js"><\/script>
+                        <div class="ad-block">
+                            <script type="text/javascript">
+                                atOptions = {
+                                    'key' : 'bc56d12282cadec7b8753ae823c22319',
+                                    'format' : 'iframe',
+                                    'height' : 300,
+                                    'width' : 160,
+                                    'params' : {}
+                                };
+                            <\/script>
+                            <script type="text/javascript" src="//www.highperformanceformat.com/bc56d12282cadec7b8753ae823c22319/invoke.js"><\/script>
+                        </div>
                     `);
                 }
             </script>
@@ -179,13 +177,40 @@
         <p>यह आपकी वेबसाइट की सामग्री का अगला भाग है।</p>
 
         <div class="ad-section">
-            <h2>Adsterra नेटिव बैनर</h2>
-            <!-- हर विज्ञापन 10 बार - Adsterra Native Banner -->
+            <h2>बैनर विज्ञापन (320×50 - मोबाइल के लिए अच्छा)</h2>
+            <!-- हर विज्ञापन 10 बार - बैनर 320×50 -->
             <script type="text/javascript">
                 for (let i = 0; i < 10; i++) {
                     document.write(`
-                        <script async="async" data-cfasync="false" src="//pl26835150.profitableratecpm.com/39628927897b21d6c45567203000ccc6/invoke.js"><\/script>
-                        <div id="container-39628927897b21d6c45567203000ccc6"><\/div>
+                        <div class="ad-block">
+                            <script type="text/javascript">
+                                atOptions = {
+                                    'key' : 'f4fd46187fcf3a252df23d7277e02fd7',
+                                    'format' : 'iframe',
+                                    'height' : 50,
+                                    'width' : 320,
+                                    'params' : {}
+                                };
+                            <\/script>
+                            <script type="text/javascript" src="//www.highperformanceformat.com/f4fd46187fcf3a252df23d7277e02fd7/invoke.js"><\/script>
+                        </div>
+                    `);
+                }
+            </script>
+        </div>
+
+        <p>यह आपकी वेबसाइट की सामग्री का अगला भाग है।</p>
+
+        <div class="ad-section">
+            <h2>नेटिव बैनर</h2>
+            <!-- हर विज्ञापन 10 बार - नेटिव बैनर -->
+            <script type="text/javascript">
+                for (let i = 0; i < 10; i++) {
+                    document.write(`
+                        <div class="ad-block">
+                            <script async="async" data-cfasync="false" src="//pl26835150.profitableratecpm.com/39628927897b21d6c45567203000ccc6/invoke.js"><\/script>
+                            <div id="container-39628927897b21d6c45567203000ccc6"><\/div>
+                        </div>
                     `);
                 }
             </script>
@@ -193,62 +218,81 @@
 
         <p>वेबसाइट के अंत के पास भी विज्ञापन रखें।</p>
 
-        <!-- Direct Link Button to open in a custom modal -->
+        <!-- डायरेक्ट लिंक बटन -->
         <p style="text-align: center; margin-top: 30px;">
-            <button id="openDirectLinkModal" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer;">यहां क्लिक करें कुछ खास जानने के लिए! (डायरेक्ट लिंक)</button>
+            <button id="openDirectLinkModal" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer;">यहां क्लिक करें!</button>
+        </p>
+        <!-- हर डायरेक्ट लिंक बटन 10 बार (आप इसे मैन्युअल रूप से कॉपी-पेस्ट कर सकते हैं या JavaScript से उत्पन्न कर सकते हैं) -->
+        <p style="text-align: center;">
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 1</button>
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 2</button>
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 3</button>
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 4</button>
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 5</button>
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 6</button>
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 7</button>
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 8</button>
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 9</button>
+            <button class="directLinkButton" style="padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; margin: 5px;">क्लिक करें 10</button>
         </p>
     </div>
 
-    <!-- Direct Link Modal Structure -->
+    <!-- डायरेक्ट लिंक मोडल स्ट्रक्चर -->
     <div id="directLinkModal" class="direct-link-modal">
         <div class="direct-link-modal-content">
             <span class="close-button">×</span>
-            <p>आप जिस पेज पर जा रहे हैं, वह यहां खुल रहा है:</p>
+            <p>आपका पेज यहां खुल रहा है:</p>
             <iframe id="directLinkIframe" class="modal-iframe" src="" frameborder="0"></iframe>
         </div>
     </div>
 
-    <!-- Adsterra Popunder (इसे </body> टैग के ठीक ऊपर रखें) -->
+    <!-- पॉप-अंडर (इसे </body> टैग के ठीक ऊपर रखें) -->
     <!-- यह स्क्रिप्ट पेज लोड होते ही पॉप-अंडर को ट्रिगर करने की कोशिश करती है -->
     <script type='text/javascript' src='//pl26835142.profitableratecpm.com/db/27/6d/db276d3b5f1289379bbe5d365485ac52.js'></script>
 
-    <!-- Adsterra Socialbar (इसे </body> टैग के ठीक ऊपर रखें) -->
+    <!-- सोशल बार (इसे </body> टैग के ठीक ऊपर रखें) -->
     <script type='text/javascript' src='//pl26835180.profitableratecpm.com/51/87/c3/5187c39d0d72d45de29e9c62b51aaba2.js'></script>
 
     <script>
-        // JavaScript for Direct Link Modal
+        // डायरेक्ट लिंक मोडल के लिए जावास्क्रिप्ट
         const directLinkModal = document.getElementById('directLinkModal');
-        const openDirectLinkModalBtn = document.getElementById('openDirectLinkModal');
+        const directLinkButtons = document.querySelectorAll('.directLinkButton'); // सभी डायरेक्ट लिंक बटन
         const closeButton = document.getElementsByClassName('close-button')[0];
         const directLinkIframe = document.getElementById('directLinkIframe');
         const directLinkURL = 'https://www.profitableratecpm.com/ekqigjxxf?key=7cc9b0386975c414c8ab9629f405b0dc';
 
-        openDirectLinkModalBtn.onclick = function() {
-            directLinkIframe.src = directLinkURL; // Load the URL into the iframe
-            directLinkModal.style.display = "block"; // Show the modal
+        // एक सामान्य फंक्शन जो मोडल को खोलता है और iframe में URL लोड करता है
+        function openDirectLink(url) {
+            directLinkIframe.src = url;
+            directLinkModal.style.display = "block";
         }
 
+        // सभी डायरेक्ट लिंक बटनों पर क्लिक इवेंट लिसनर जोड़ें
+        directLinkButtons.forEach(button => {
+            button.onclick = function() {
+                openDirectLink(directLinkURL);
+            };
+        });
+
+        // "यहां क्लिक करें!" बटन के लिए भी
+        document.getElementById('openDirectLinkModal').onclick = function() {
+            openDirectLink(directLinkURL);
+        };
+
+
         closeButton.onclick = function() {
-            directLinkModal.style.display = "none"; // Hide the modal
-            directLinkIframe.src = ""; // Clear the iframe src to stop any loading
+            directLinkModal.style.display = "none";
+            directLinkIframe.src = "";
         }
 
         window.onclick = function(event) {
             if (event.target == directLinkModal) {
-                directLinkModal.style.display = "none"; // Hide the modal if clicked outside
-                directLinkIframe.src = ""; // Clear the iframe src
+                directLinkModal.style.display = "none";
+                directLinkIframe.src = "";
             }
         }
-
-        // Popunder - Force open on page load (Adsterra's script handles this, but here's a conceptual way if it needed a trigger)
-        // Note: Modern browsers often block pop-unders if not user-initiated.
-        // Adsterra's script itself attempts to open it.
-
-        // Fast loading for banner ads - Using document.write within a loop
-        // This makes the browser process these scripts as soon as it encounters the document.write,
-        // which might block rendering temporarily but ensures they are "loaded" quickly in sequence.
-        // For production, consider appending elements dynamically for better performance.
     </script>
 
 </body>
 </html>
+
